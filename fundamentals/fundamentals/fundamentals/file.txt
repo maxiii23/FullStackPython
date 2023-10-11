@@ -1,0 +1,64 @@
+- #declaración de variables
+- declaración de registro
+- verificación de tipo
+- control de longitud
+- comentario
+    - linea sola
+    - multilínea
+- Tipos de datos
+    - Primitivo
+        - Booleano
+        - Números
+        - Cuerdas
+    - Compuesto
+        - Lista
+            - inicializar
+            - valor de acceso
+            - valor de cambio
+            - añadir valor
+            - eliminar valor
+        - tuplas
+            - inicializar
+            - valor de acceso
+            - valor de cambio
+            - añadir valor
+            - eliminar valor
+        - Diccionario
+            - inicializar
+            - valor de acceso
+            - valor de cambio
+            - añadir valor
+            - eliminar valor
+- condicional
+    - si
+    - más si
+    - demás
+- en bucle
+    - comenzar
+    - detener
+    - incremento
+    - romper
+    - continuar
+    - secuencia
+- mientras bucle
+    - comenzar
+    - detener
+    - incremento
+- función
+    - parámetro
+    - argumento
+    - devolver
+
+* Bono: Errores
+
+- NameError: el nombre <nombre de la variable> no está definido
+- TypeError: el objeto 'tuple' no admite la asignación de elementos
+- KeyError: 'equipo_favorito'
+- IndexError: índice de lista fuera de rango
+- IndentationError: sangría inesperada
+- AttributeError: el objeto 'tuple' no tiene atributo 'pop'
+- AttributeError: el objeto 'tupla' no tiene atributo 'agregar'
+- tuplas
+    - valor de cambio
+    - añadir valor
+    - eliminar valor

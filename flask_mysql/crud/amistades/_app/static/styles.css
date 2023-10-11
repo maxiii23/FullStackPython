@@ -1,0 +1,46 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    padding: 40px;
+}
+
+.cont_show
+{
+    width: 60%;
+    height: fit-content;
+}
+
+h2
+{
+    padding-bottom: 15px;
+}
+
+.cont_add
+{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+}
+
+.AddUser
+{
+    margin-bottom: 40px;
+}
+
+.cont_table
+{
+    width: 60%;
+}
+
+.margin_boton
+{
+    margin-bottom: 20px;
+}

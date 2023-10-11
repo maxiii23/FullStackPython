@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cajas de Color</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    {% for _ in range(num_boxes) %}
+        <div class="box" style="background-color: {{ color }}"></div>
+    {% endfor %}
+</body>
+</html>

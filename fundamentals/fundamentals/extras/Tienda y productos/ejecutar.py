@@ -1,0 +1,38 @@
+from tienda import tiendita
+from productos import producto
+
+tienda1 = tiendita("Tienda 1")
+
+producto1 = producto("Polera", 10.99, "ropa")
+producto2 = producto("Pantalon", 1.99, "ropa")
+producto3 = producto("Poleron", 15.99, "ropa")
+producto4 = producto("Polera", 16.99, "ropa")
+producto5 = producto("Short", 18.99, "ropa")
+producto6 = producto("Short", 18.99, "ropa")
+producto7 = producto("Short", 18.99, "ropa")
+producto8 = producto("Short", 18.99, "ropa")
+producto9 = producto("Short", 18.99, "ropa")
+producto10 = producto("Short", 18.99, "ropa")
+producto11 = producto("Short", 18.99, "ropa")
+producto12 = producto("Short", 18.99, "ropa")
+
+tienda1.agregar_producto(producto1)
+tienda1.agregar_producto(producto2)
+tienda1.agregar_producto(producto3)
+tienda1.agregar_producto(producto4)
+tienda1.agregar_producto(producto5)
+tienda1.agregar_producto(producto6)
+tienda1.agregar_producto(producto7)
+tienda1.agregar_producto(producto9)
+tienda1.agregar_producto(producto10)
+tienda1.agregar_producto(producto11)
+tienda1.agregar_producto(producto12)
+tienda1.mostrar_productos()
+tienda1.vender_producto(2)
+tienda1.vender_producto(6)
+tienda1.vender_producto(8)
+tienda1.mostrar_productos()
+tienda1.inflacion(10)
+tienda1.liquidacion("ropa", 12)
+
+tienda1.vender_articulo(1)

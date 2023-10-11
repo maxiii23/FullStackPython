@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ganadores</title>
+</head>
+<body>
+    <h1>Lista de Ganadores</h1>
+    
+    <ul>
+        {% for ganador in ganadores %}
+        <li>{{ ganador.nombre }} - Intentos: {{ ganador.intentos }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

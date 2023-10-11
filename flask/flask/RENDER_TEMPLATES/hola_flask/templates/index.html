@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- enlazar una hoja de estilo CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+<!-- enlazar un archivo javascript -->
+
+</head>
+<body>
+    <h1>Tablero de Ajedrez</h1>
+    <table>
+        {% for row in range(rows) %}
+        <tr>
+            {% if is_columns_color %}
+            {% set start_color = loop.index % 2 %}
+            {% for col in range(columns) %}
+            {% set is_color1 = (col + start_color) % 2 == 0 %}
+            <td class="{% if is_color1 %}color1{% else %}color2{% endif %}">
+            </td>
+            {% endfor %}
+            {% else %}
+            {% set is_color1 = row % 2 == 0 %}
+            {% for col in range(columns) %}
+            <td class="{% if is_color1 %}color1{% else %}color2{% endif %}">
+            </td>
+            {% endfor %}
+            {% endif %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

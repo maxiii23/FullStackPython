@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Books</title>
+</head>
+<body style="background-color: lightgray;">
+    <nav class="navbar bg-dark mb-4">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1 text-light">Coding Dojo</span>
+            <a class=" btn btn-warning" href="/">Home</a>
+        </div>
+    </nav>
+    <div class="d-flex flex-wrap justify-content-around">
+        <form action="/create/book" method="post" class="col-6 p-3 bg-dark text-light">
+            <h2 class="text-center text-warning">NUEVO LIBRO</h2>
+            <div class="form-group">
+                <label for="tite">TITULO:</label>
+                <input type="text" name="title" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="num_of_pages">Num. de paginas:</label >
+                <input type="number" name="num_of_pages" class="form-control" required>
+            </div>
+            <input type="submit" value="AÑADIR LIBRO" class="btn btn-warning">
+        </form>
+        <div class="card col-6 bg-dark">
+            <div class="card-body">
+                <h2 class="card-title text-warning">TODOS LOS LIBROS</h2>
+                {% for one_book in all_books %}
+                    <a class=" btn btn-warning" href="/book/{{one_book.id}}">{{one_book.title}}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

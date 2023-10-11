@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='{{url_for("static", filename="/style.css")}}'>
+</head>
+<body>
+    <main>
+        <h1>CONTADOR</h1>
+        <h2>{{session['count']}}</h2>
+        <div class="increment_form">
+            <form action='/increment_two' method='post'>
+                <input type="submit" value="+2" class="plus_2">
+            </form>
+            <form action='/reset' method='post'>
+                <input type="submit" value="Reiniciar" class="reset">
+            </form>
+        </div>
+        <form action="/manual_increment" method="post">
+            <label>ingresa el numero que quieres que incremente:</label>
+            <input type="text" name="number" id="textbox">
+            <input type="submit" value="Insertar Cantidad!">
+        </form>
+        <h2>Cantidad de veces visitada la página : {{session['in_page']}}</h2>
+
+    </main>
+</body>
+</html>
